@@ -8,7 +8,10 @@ get_header();
     get_template_part('template-parts/sections/hero');
     get_template_part('template-parts/sections/about-me');
     get_template_part('template-parts/sections/work');
-
+    get_template_part('template-parts/sections/client-reviews');
+    get_template_part('template-parts/sections/education');
+    get_template_part('template-parts/sections/standards');
+    get_template_part('template-parts/sections/courses');
     get_template_part('template-parts/sections/skills');
     get_template_part('template-parts/sections/qualifications');
 

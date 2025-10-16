@@ -675,3 +675,433 @@ body {
   line-height: 2;
   color: #d7e3ec;
 }
+
+.education-section {
+  background: #939393;
+  padding: 100px 0 80px 0;
+}
+
+.education-row {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  align-items: flex-start;
+  gap: 60px;
+}
+
+.education-title {
+  font-size: 90px;
+  font-weight: 400;
+  color: #fff;
+  margin: 0;
+  letter-spacing: 1px;
+  flex: 0 0 auto;
+  line-height: 1;
+}
+
+.education-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0;
+  flex: 1 1 0;
+}
+
+.education-item {
+  flex: 1 1 0;
+  text-align: left;
+  color: #fff;
+  padding: 0 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.education-year {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 18px;
+  letter-spacing: 1px;
+}
+
+.education-degree {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+.education-school {
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  opacity: 0.85;
+}
+
+.education-divider {
+  width: 1px;
+  background: rgba(255,255,255,0.3);
+  height: 187px;
+  align-self: center;
+}
+
+@media (max-width: 1100px) {
+  .education-title {
+    font-size: 48px;
+  }
+  .education-row {
+    flex-direction: column;
+    gap: 40px;
+    align-items: stretch;
+  }
+  .education-list {
+    flex-direction: column;
+    gap: 32px;
+  }
+  .education-divider {
+    display: none;
+  }
+  .education-item {
+    padding: 0;
+    text-align: center;
+  }
+}
+
+
+.client-reviews-section {
+  position: relative;
+  background-color: #011b2b; /* dark navy background */
+  color: #fff;
+  padding: 120px 0;
+  overflow: hidden;
+}
+
+.client-reviews-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.client-reviews-left {
+  flex: 0 0 35%;
+}
+
+.client-reviews-right {
+  flex: 0 0 60%;
+}
+
+.client-reviews-title {
+  font-size: 79px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  line-height: 1.1;
+  margin-top: 5px;
+}
+
+.client-review-text {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  max-width: 680px;
+}
+
+.client-review-author {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.client-author-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.client-author-name {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.client-author-role {
+  font-size: 16px;
+  opacity: 0.85;
+  margin: 0;
+}
+
+/* background pattern image */
+.review-pattern {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 350px;
+  opacity: 0.15;
+  pointer-events: none;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .client-reviews-wrapper {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .client-reviews-left,
+  .client-reviews-right {
+    flex: 0 0 100%;
+  }
+
+  .client-reviews-title {
+    font-size: 56px;
+    text-align: center;
+  }
+
+  .client-review-text {
+    font-size: 16px;
+    text-align: center;
+    margin: 0 auto 30px;
+  }
+
+  .client-review-author {
+    justify-content: center;
+  }
+
+  .review-pattern {
+    width: 250px;
+  }
+}
+
+
+
+
+.courses-section {
+  position: relative;
+  background-color: #011b2b; /* same dark navy as client reviews */
+  color: #fff;
+  padding: 120px 0;
+  overflow: hidden;
+}
+
+.courses-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.courses-left {
+  flex: 0 0 30%;
+}
+
+.courses-right {
+  flex: 0 0 65%;
+}
+
+.courses-title {
+  font-size: 72px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  line-height: 1.1;
+  margin-top:-23px;
+}
+
+.courses-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.courses-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.course-year {
+  flex: 0 0 60px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  opacity: 0.9;
+}
+
+.course-name {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #d5e1e9;
+  display: block;
+  max-width: 700px;
+}
+
+/* background pattern */
+.courses-pattern {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 400px;
+  opacity: 0.15;
+  pointer-events: none;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .courses-wrapper {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .courses-left,
+  .courses-right {
+    flex: 0 0 100%;
+  }
+
+  .courses-title {
+    font-size: 56px;
+    text-align: center;
+  }
+
+  .courses-list li {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .course-year {
+    font-size: 18px;
+  }
+
+  .course-name {
+    font-size: 16px;
+  }
+
+  .courses-pattern {
+    width: 250px;
+  }
+}
+.courses-list li:hover .course-year,
+.courses-list li:hover .course-name {
+    color: #fff;
+    opacity: 1;
+    transition: color 0.2s, opacity 0.2s;
+}
+
+
+
+
+.standards-wrapper {
+    max-width: 1200px;
+    margin: 0 0 0 80px; /* shift right, adjust as needed */
+    padding: 0;
+}
+
+.standards-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 60px;
+    margin-bottom: 40px;
+}
+
+.standards-title {
+    font-size: 84px;
+    font-weight: 600;
+    color: #1a2a3a;
+    margin: 0;
+    flex-shrink: 0;
+    width: 300px;
+}
+
+.standards-description {
+    font-size: 17px;
+    line-height: 1.6;
+    color: #444;
+    flex-grow: 1;
+    padding-top: 10px;
+    max-width: 700px;
+    margin-left: 332px;
+}
+
+.standards-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 40px; /* reduce gap between columns */
+}
+
+.standards-item {
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.item-icon {
+    margin-bottom: 20px;
+}
+
+.item-icon img {
+    width: 40px;
+    height: 40px;
+}
+
+.item-title {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #1a2a3a;
+    margin: 0 0 10px 0;
+}
+
+.item-details {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.95em;
+    color: #666;
+    line-height: 1.4;
+}
+
+.item-details li {
+    margin-bottom: 5px;
+}
+
+.item-separator {
+    height: 1px;
+    background-color: black;
+    margin-top: 25px;
+    width: 58%;
+}
+
+@media (max-width: 992px) {
+    .standards-wrapper {
+        margin: 0 10px;
+        max-width: 100%;
+    }
+    .standards-header {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    .standards-title {
+        width: 100%;
+        font-size: 2em;
+    }
+    .standards-description {
+        text-align: center;
+        max-width: 100%;
+    }
+    .standards-grid {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    .standards-item {
+        padding: 20px 0;
+        text-align: center;
+    }
+    .item-icon {
+        margin: 0 auto 15px auto;
+    }
+}
