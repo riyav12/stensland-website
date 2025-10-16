@@ -1,0 +1,33 @@
+# Ignore OS and IDE files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# WordPress core files (can be reinstalled)
+wp-admin/
+wp-includes/
+
+# Ignore uploads and cache
+wp-content/uploads/
+wp-content/cache/
+wp-content/upgrade/
+
+# Sensitive config file
+wp-config.php
+
+# Logs and backups
+*.log
+*.sql
+*.zip
+*.tar.gz
+*.bak
+*.tmp
+
+# Ignore vendor or node modules
+node_modules/
+vendor/
+
+# Keep custom themes and plugins
+!wp-content/themes/
+!wp-content/plugins/
